@@ -1,12 +1,18 @@
 ---
+import Loader from '../../public/Loader/Loader.astro'
 import Headermain from '../components/headermain.astro';
-import HeaderImgBackground from '../components/HeaderImgBackground.astro';
+import HeaderImgBackground from '../../src/components/HeaderImgBackground.astro';
+import HeaderDetails from '../components/HeaderDetails.astro';
 import Layout from '../layouts/Layout.astro';
 ---
+
 <Layout title="Rodrigues Assistência">
 
-	<main>
+	<main class="p-0 m-auto w-full max-w-screen-xl">
+		<Loader />
 		<Headermain />
 		<HeaderImgBackground />
+		<HeaderDetails />
+
 	</main>
 </Layout>
